@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-fieldset {
+    width: 100%;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+fieldset input[required] {
+    border-color: red;
+}
+
+fieldset {
+    background-color: rgb(248, 248, 248);
+    padding: 1rem;
+}
+
+fieldset:not(.main-fieldset):hover {
+    background-color: rgb(211, 211, 211);
+}
+.first-fieldset-input-item, .last-fieldset-input-item {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-style: none;
+    padding: 15px;
+}

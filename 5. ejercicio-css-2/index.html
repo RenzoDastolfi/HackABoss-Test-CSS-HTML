@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio CSS 2</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <!-- No se puede dejar vacio el atributo action o el validador W3 da error -->
+    <form action="./" method="GET">
+      <fieldset class="main-fieldset">
+        <legend class="main-legend">Ejercicio 2 - CSS - Formulario</legend>
+        <br />
+
+        <fieldset class="first-fieldset-input-item">
+          <legend><label for="fullname">Nombre/Apellidos:</label></legend>
+          <input type="text" id="fullname" name="fullname" autofocus required />
+        </fieldset>
+        <br /><br />
+
+        <fieldset>
+          <legend><label for="email">Email:</label></legend>
+          <input type="email" id="email" name="email" required />
+        </fieldset>
+        <br /><br />
+
+        <fieldset>
+          <legend><label for="url">Página web:</label></legend>
+          <input type="url" id="url" name="url" />
+        </fieldset>
+        <br /><br />
+
+        <fieldset>
+          <legend><label for="date">Fecha:</label></legend>
+          <input type="date" id="date" name="date" />
+        </fieldset>
+        <br /><br />
+
+        <fieldset>
+          <legend><label for="time">Tiempo:</label></legend>
+          <input type="time" id="time" name="time" />
+        </fieldset>
+        <br /><br />
+
+        <!-- La etiqueta datetime esta deprecada, utilizo datetime-local en su lugar -->
+        <fieldset>
+          <legend><label for="datetime">Fecha y hora:</label></legend>
+          <input type="datetime-local" id="datetime" name="datetime" />
+        </fieldset>
+        <br /><br />
+
+        <fieldset>
+          <legend><label for="month">Mes:</label></legend>
+          <input type="month" id="month" name="month" />
+        </fieldset>
+        <br /><br />
+
+        <fieldset>
+          <legend><label for="week">Semana:</label></legend>
+          <input type="week" id="week" name="week" />
+        </fieldset>
+        <br /><br />
+
+        <fieldset>
+          <legend><label for="number">Número:</label></legend>
+          <input type="number" max="10" min="-10" id="number" name="number" />
+        </fieldset>
+        <br /><br />
+
+        <fieldset>
+          <legend><label for="phone">Teléfono:</label></legend>
+          <input type="tel" value="+393312294875" id="phone" name="phone" readonly />
+        </fieldset>
+        <br /><br />
+
+        <fieldset>
+          <legend><label for="search">Término de búsqueda:</label></legend>
+          <input type="search" id="search" name="search" disabled />
+        </fieldset>
+        <br /><br />
+
+        <fieldset class="first-fieldset-input-item">
+          <legend ><label for="color">Color favorito:</label></legend>
+          <input type="color" id="color" name="color" />
+        </fieldset>
+        <br /><br />
+
+        <button>Send</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

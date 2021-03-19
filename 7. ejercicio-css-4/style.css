@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgb(255, 164, 80) 0%, rgb(253, 170, 61) 100%);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.title {
+    color: #fff;
+    font-size: 4em;
+    animation: fadein 1s;
+}
+
+.persons {
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+    gap: 5%;
+}
+
+.person {
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.47);
+    display: grid;
+    flex: 1;
+    grid-template-rows: auto 1fr;
+    transition: all 200ms ease-in-out;
+    animation: fadein 1s;
+    animation-fill-mode: both;
+}
+
+.person.first{
+    animation-delay: 1s;
+}
+.person.second{
+    animation-delay: 2s;
+}
+.person.third{
+    animation-delay: 3s;
+}
+
+.person:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@keyframes fadein2 {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.person .upperBox {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0 1.5em 0;
+}
+
+.imgBox img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 80% 0%;
+}
+
+
+.socialMedia {
+    display: flex;
+    gap: 0.5em;
+    margin: 0 3em;
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    color: white;
+}
+
+
+.lowerBox {
+    background: rgb(119, 0, 255);
+    color: #fff;
+    padding: 1em 2em;
+}

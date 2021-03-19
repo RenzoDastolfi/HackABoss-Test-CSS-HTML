@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-position: inside;
+    font-size: 10ptem;
+}
+
+.lista li:last-child {
+    background: rgb(0, 0, 255);
+}
+
+.lista li:nth-child(odd){
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+
+.lista li:nth-child(1)::after {
+  content: "😀";  
+}
+.lista li:nth-child(2)::after {
+  content: "😃";  
+}
+.lista li:nth-child(3)::after {
+  content: "🥺";  
+}
+.lista li:nth-child(4)::after {
+  content: "🤯";
+}
+.lista li:nth-child(5)::after {
+  content: "😎";  
+}
+.lista li:nth-child(6)::after {
+  content: "🤓";  
+}
+
+#provincias {
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+
+#provincias li:nth-child(2){
+    list-style: none;
+}
+
+li[lang] {
+    font-size: 2em;
+    text-transform: uppercase;
+}
